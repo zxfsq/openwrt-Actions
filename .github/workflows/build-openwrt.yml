@@ -77,6 +77,7 @@ jobs:
         
     - name: Clone passwall code
       run: |
+        mkdir package
         cd package
         mkdir openwrt-packages
         cd openwrt-packages
