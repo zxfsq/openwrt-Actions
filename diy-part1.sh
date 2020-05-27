@@ -9,8 +9,8 @@
 #=============================================================
 
 # Uncomment a feed source
-src-git helloworld https://github.com/fw876/helloworld
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-src-git lienol https://github.com/chengood5000/passwall652.git
+#src-git helloworld https://github.com/fw876/helloworld
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#src-git lienol https://github.com/chengood5000/passwall652.git
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
