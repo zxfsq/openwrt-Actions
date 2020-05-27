@@ -27,7 +27,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
-#  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
@@ -79,13 +79,12 @@ jobs:
       run: |
         mkdir package
         cd package
-        mkdir openwrt-packages
-        cd openwrt-packages
-        git clone https://github.com/Lienol/openwrt-package.git
-        git clone https://github.com/fw876/helloworld
+        mkdir lean
+        cd lean 
         git clone https://github.com/chengood5000/passwall652.git
         git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-        git clone https://github.com/jerrykuku/luci-app-vssr.git          
+        git clone https://github.com/jerrykuku/luci-app-vssr.git        
+        git clone https://github.com/fw876/helloworld
         df -h
         
     - name: Update feeds
