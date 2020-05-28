@@ -75,17 +75,17 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
         
-    - name: Clone passwall code
-      run: |
-        mkdir package
-        cd package
-        mkdir lean
-        cd lean 
-        git clone https://github.com/chengood5000/passwall652.git
-        git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-        git clone https://github.com/jerrykuku/luci-app-vssr.git        
-        git clone https://github.com/fw876/helloworld
-        df -h
+#    - name: Clone passwall code
+#      run: |
+#        mkdir package
+#        cd package
+#        mkdir lean
+#        cd lean 
+#        git clone https://github.com/chengood5000/passwall652.git
+#        git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+#        git clone https://github.com/jerrykuku/luci-app-vssr.git        
+#        git clone https://github.com/fw876/helloworld
+#        df -h
         
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
