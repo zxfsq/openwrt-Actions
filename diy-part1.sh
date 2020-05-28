@@ -14,3 +14,7 @@
 #src-git lienol https://github.com/chengood5000/passwall652.git
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+git clone https://github.com/chengood5000/passwall652.git
+git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/luci-app-vssr.git        
+git clone https://github.com/fw876/helloworld
