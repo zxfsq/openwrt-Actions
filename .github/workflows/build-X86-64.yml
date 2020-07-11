@@ -12,9 +12,9 @@ on:
   repository_dispatch:
   release:
     types: published
- # push:
- #   branches:
- #     - master
+  push:
+    branches:
+      - master
     paths:
       - '.config'
 #  schedule:
@@ -31,7 +31,7 @@ env:
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
-  UPLOAD_FIRMWARE: true
+  UPLOAD_FIRMWARE: false
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
